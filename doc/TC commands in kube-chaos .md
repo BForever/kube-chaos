@@ -104,7 +104,7 @@ delay，通过classid获取队列，两个参数分别是延迟时间和延迟�
 
 loss，两个参数分别是丢包率和相关系数
 
-`tc qdsic change dev ifb0 parent 1:X netem duplicate $percentage $relate`
+`tc qdsic change dev ifb0 parent 1:X netem drop $percentage $relate`
 
 duplicate，参数为重发百分比
 
